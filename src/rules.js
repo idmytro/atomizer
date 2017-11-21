@@ -282,7 +282,7 @@ module.exports = [
         "matcher": "Bdc",
         "allowParamToValue": true,
         "styles": {
-            "border-color": "$0"
+            "border-color": "$0 $1 $2 $3"
         },
         "arguments": [colors]
     },
@@ -359,7 +359,7 @@ module.exports = [
         "matcher": "Bds",
         "allowParamToValue": false,
         "styles": {
-            "border-style": "$0"
+            "border-style": "$0 $1 $2 $3"
         },
         "arguments": [{
             "d": "dotted",
@@ -474,7 +474,7 @@ module.exports = [
         "matcher": "Bdw",
         "allowParamToValue": true,
         "styles": {
-            "border-width": "$0"
+            "border-width": "$0 $1 $2 $3"
         },
         "arguments": [{
             "m": "medium",
@@ -554,7 +554,7 @@ module.exports = [
         "matcher": "Bdrs",
         "allowParamToValue": true,
         "styles": {
-            "border-radius": "$0"
+            "border-radius": "$0 $1 $2 $3"
         }
     },
     // top-right
@@ -1578,7 +1578,7 @@ module.exports = [
         "matcher": "M",
         "allowParamToValue": true,
         "styles": {
-            "margin": "$0"
+            "margin": "$0 $1 $2 $3"
         },
         "arguments": [{
             "0": "0",
@@ -1939,7 +1939,7 @@ module.exports = [
         "matcher": "P",
         "allowParamToValue": true,
         "styles": {
-            "padding": "$0"
+            "padding": "$0 $1 $2 $3"
         }
     },
     // X axis
