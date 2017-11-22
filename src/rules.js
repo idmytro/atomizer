@@ -1143,6 +1143,7 @@ module.exports = [
     {
         "type": "pattern",
         "name": "Flex grow (deprecated)",
+        "deprecated": true,
         "matcher": "Flxg",
         "allowParamToValue": true,
         "styles": {
@@ -1162,6 +1163,7 @@ module.exports = [
     {
         "type": "pattern",
         "name": "Flex shrink (deprecated)",
+        "deprecated": true,
         "matcher": "Flxs",
         "allowParamToValue": true,
         "styles": {
@@ -1181,6 +1183,7 @@ module.exports = [
     {
         "type": "pattern",
         "name": "Flex basis (deprecated)",
+        "deprecated": true,
         "matcher": "Flxb",
         "allowParamToValue": true,
         "styles": {
@@ -1228,6 +1231,7 @@ module.exports = [
     {
         "type": "pattern",
         "name": "Flex direction (deprecated)",
+        "deprecated": true,
         "matcher": "Fld",
         "allowParamToValue": false,
         "styles": {
@@ -1259,6 +1263,7 @@ module.exports = [
     {
         "type": "pattern",
         "name": "Flex flow (deprecated)",
+        "deprecated": true,
         "matcher": "Flf",
         "allowParamToValue": false,
         "styles": {
@@ -1367,6 +1372,7 @@ module.exports = [
     {
         "type": "pattern",
         "name": "Flex-wrap (deprecated)",
+        "deprecated": true,
         "matcher": "Flw",
         "allowParamToValue": false,
         "styles": {
