@@ -1115,6 +1115,7 @@ module.exports = [
     {
         "type": "pattern",
         "name": "Flex (deprecated)",
+        "deprecated": true,
         "matcher": "Flx",
         "allowParamToValue": false,
         "styles": {
