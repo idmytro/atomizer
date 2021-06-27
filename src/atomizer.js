@@ -296,6 +296,13 @@ Atomizer.prototype.parseConfig = function (config/*:AtomizerConfig*/, options/*:
                     if (matchVal.named === 'inh') {
                         value = 'inherit';
                     }
+
+                    // FORK ADDITION HERE
+                    else if (rule.customProperties) {
+                        value = matchVal.named
+                    }
+                    // /FORK ADDITION HERE
+
                     // check if the named value matches any of the values
                     // registered in arguments.
                     else if (rule.arguments && index < rule.arguments.length && Object.keys(rule.arguments[index]).indexOf(matchVal.named) >= 0) {
