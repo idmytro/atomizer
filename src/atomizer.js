@@ -297,11 +297,18 @@ Atomizer.prototype.parseConfig = function (config/*:AtomizerConfig*/, options/*:
                         value = 'inherit';
                     }
 
-                    // FORK ADDITION HERE
-                    else if (rule.customProperties) {
-                        value = matchVal.named
-                    }
-                    // /FORK ADDITION HERE
+                    /* FORK ADDITION STARTS HERE */
+                    /* Example: Brds($) -> border-radius: var(--bdrs-default) */
+                    else if (matchVal.named === '$') {
+                        const key = treeo.className.split('(')[0].toLowerCase()
+                        value = `var(--${key}-default)`
+                      }
+
+                      /* Example: Brds($my-var) -> border-radius: var(--my-var) */
+                      else if (matchVal.named[0] === '$') {
+                          value = `var(--${matchVal.named.slice(1)})`
+                      }
+                      /* /FORK ADDITION ENDS HERE */
 
                     // check if the named value matches any of the values
                     // registered in arguments.
